@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns		= "http://www.w3.org/ns/widgets"
+	xmlns:gap	= "http://phonegap.com/ns/1.0"
+	id		= "com.vaadin.phonegap.getting.started"
+	version 	= "1.0.0">
+
+	<name>Sample App</name>
+
+	<description>
+		A sample app to integrate with PhoneGap wrapped Vaadin app and build.phonegap.com
+	</description>
+
+	<author href="https://github.com/Coralma"
+		email="maqujun@gmail.com">
+		Coral Ma
+	</author>
+
+	<icon src="icon.png" gap:role="default" />
+
+	<feature name="http://api.phonegap.com/1.0/geolocation"/>
+	<feature name="http://api.phonegap.com/1.0/network"/>
+
+	<!-- These rules lets demo.vaadin.com take over the web view created by cordova/phonegap -->
+	<preference name="stay-in-webview" value="true" />
+	<access origin="http://demo.vaadin.com" />
+	<!-- Vornitologist uses openstreetmap data as background map so we'll whitelist that as well -->
+	<access origin="http://openstreetmap.org" subdomains="true" />
+
+</widget>
